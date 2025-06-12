@@ -90,27 +90,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Where's everyone at?</h1>
-      {counter !== 0 ? (
-        <p>
-          <b>{counter}</b> {counter === 1 ? "person" : "people"} connected.
-        </p>
-      ) : (
-        <p>&nbsp;</p>
-      )}
+      <h1>Apphaven</h1>
 
       {/* The canvas where we'll render the globe */}
       <canvas
         ref={canvasRef as LegacyRef<HTMLCanvasElement>}
         style={{ width: 400, height: 400, maxWidth: "100%", aspectRatio: 1 }}
       />
-
-      {/* Let's give some credit */}
-      <p>
-        Powered by <a href="https://cobe.vercel.app/">🌏 Cobe</a>,{" "}
-        <a href="https://www.npmjs.com/package/phenomenon">Phenomenon</a> and{" "}
-        <a href="https://npmjs.com/package/partyserver/">🎈 PartyServer</a>
-      </p>
     </div>
   );
 }
