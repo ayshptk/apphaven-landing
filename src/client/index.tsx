@@ -90,7 +90,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Apphaven</h1>
+      <h1>AppHaven</h1>
 
       {/* The canvas where we'll render the globe */}
       <canvas
